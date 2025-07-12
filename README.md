@@ -1,75 +1,71 @@
-# Nuxt Minimal Starter
+# 📝 Nuxt Todo App
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project is a simple Todo application built with **Nuxt 3** and **Vue 3**.  
+It serves as a learning project to explore the core concepts of Nuxt: components, routing, state management, local API handlers, and more.
 
-## Setup
+## 🚀 Features
 
-Make sure to install dependencies:
+- ✅ Add and delete tasks
+- 📝 Edit the title of a task
+- ✔️ Mark tasks as completed or not
+- 🔍 Filter tasks by status: all / active / completed
+- 💾 Local persistence with Local Storage
+- 🌙 Dark mode support
+- ♻️ Refresh data using a local (mock) API
+- 🧩 Modular architecture using custom composables
+
+## 🛠️ Technologies Used
+
+- [Nuxt 3](https://nuxt.com/)
+- [Vue 3](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- Local APIs using `/server/api`
+- State management with `composables`
+
+## 📚 Learning Objectives
+
+- Understand how Nuxt 3 works
+- Use file-based routing
+- Create reusable composables (`useTodos`)
+- Handle local API endpoints in `/server/api`
+- Share reactive state using `useState`
+
+## ⚙️ Installation
 
 ```bash
-# npm
-npm install
+# Clone the repository
+git clone https://github.com/ItsMeViipeR/nuxt-todo-app.git
+cd nuxt-todo-app
 
-# pnpm
+# Install dependencies
 pnpm install
 
-# yarn
-yarn install
-
-# bun
-bun install
+# Start the development server
+pnpm run dev
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## 📦 Project Structure
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+.
+├── pages/           # Nuxt pages (auto-routing)
+├── components/      # Reusable UI components
+├── composables/     # Logic composables
+├── server/api/      # Mock API for todos
+├── types/           # Type definitions (e.g., Todo)
+├── assets/          # Static assets (CSS, images)
+├── app.vue          # Main application entry
+└── nuxt.config.ts   # Global Nuxt configuration
 ```
 
-## Production
+## 💡 Future Improvements
 
-Build the application for production:
+- Add authentication (e.g., Supabase, Auth.js)
+- Sync with a real database (MongoDB, Supabase, etc.)
+- Add unit and end-to-end tests (Vitest, Cypress)
+- Deploy to Vercel or Netlify
+- Add internationalization (i18n)
 
-```bash
-# npm
-npm run build
+## 📄 License
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Open-source project for educational purposes. Feel free to use and adapt it for learning.
