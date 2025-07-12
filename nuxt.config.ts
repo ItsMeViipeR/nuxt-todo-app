@@ -9,4 +9,10 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  app: {
+    head: {
+      title: "Page",
+      titleTemplate: "%s - Nuxt Todo App",
+    },
+  },
 });
